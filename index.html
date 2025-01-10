@@ -171,50 +171,54 @@
     </div>
     </div>
 
-    <section class="form-section py-5 bg-light">
-        <div class="container">
-            <h1 class="text-center mb-4">Formulaire de Réservation</h1>
-            <form action="#" method="POST">
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <label for="nom" class="form-label">Nom</label>
-                        <input type="text" id="nom" name="nom" class="form-control" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="prenom" class="form-label">Prénom</label>
-                        <input type="text" id="prenom" name="prenom" class="form-control" required>
-                    </div>
-                </div>
-                <div class="row g-3 mt-3">
-                    <div class="col-md-6">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="telephone" class="form-label">Numéro de téléphone</label>
-                        <input type="tel" id="telephone" name="telephone" class="form-control" pattern="[0-9]{9}" placeholder="Ex: 770050050" required>
-                    </div>
-                </div>
-                <div class="row g-3 mt-3">
-                    <div class="col-md-6">
-                        <label for="date" class="form-label">Date de réservation</label>
-                        <input type="date" id="date" name="date" class="form-control" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="heure" class="form-label">Heure</label>
-                        <input type="time" id="heure" name="heure" class="form-control" required>
-                    </div>
-                </div>
-                <div class="mt-3">
-                    <label for="personnes" class="form-label">Nombre de personnes</label>
-                    <input type="number" id="personnes" name="personnes" class="form-control" min="1" max="20" required>
-                </div>
-                <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary">Réserver</button>
-                </div>
-            </form>
+    <h1 class="text-center mb-4">Formulaire de Réservation</h1>
+    <form action="#" method="POST">
+        <div class="mb-3">
+            <label for="nom" class="form-label required">Nom</label>
+            <input type="text" id="nom" name="nom" class="form-control" required>
         </div>
-    </section>
+
+        <div class="mb-3">
+            <label for="prenom" class="form-label required">Prénom</label>
+            <input type="text" id="prenom" name="prenom" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label required">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="telephone" class="form-label required">Numéro de téléphone</label>
+            <input type="tel" id="telephone" name="telephone" class="form-control" pattern="[0-9]{9}" placeholder="Ex: 770050050" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="date" class="form-label required">Date de réservation</label>
+            <input type="date" id="date" name="date" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="heure" class="form-label required">Heure</label>
+            <input type="time" id="heure" name="heure" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="personnes" class="form-label required">Nombre de personnes</label>
+            <input type="number" id="personnes" name="personnes" class="form-control" min="1" max="20" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="commentaires" class="form-label">Commentaires</label>
+            <textarea id="commentaires" name="commentaires" class="form-control" rows="3" placeholder="Ajouter des détails ou des demandes particulières"></textarea>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Réserver</button>
+            <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+        </div>
+    </form>
+
 
     <section class="temoins-section">
         <h2 class="text-center text-black">Témoignages</h2>
