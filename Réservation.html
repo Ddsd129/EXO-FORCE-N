@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="fr">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Réservation</title>
+    <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,8 +13,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
 
+<body>
+    
     <div>
     <nav class="navbar navbar-expand-lg  bg-ligth " >
         <div class="container-fluid">
@@ -23,7 +23,7 @@
                 <img src="sp.jpg" alt=""style="border-radius: 50%"
                 width="50px"
                 height="50px">
-                <span>Sauce</span>_Piquante</a>
+                Sauce<span>_Piquante</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -53,62 +53,58 @@
                     <li class="nav-item mx-3 fw-bold" >
                         <a aria-current="page"
                             href="Contact.html" >Contact</a>
+
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <h1 class="text-center mb-4">Formulaire de Réservation</h1>
+<section class="form-section py-5 bg-light">
+    <h1 class="text-center mb-4">Réservation</h1>
     <form action="#" method="POST">
-        <div class="mb-3">
-            <label for="nom" class="form-label required">Nom</label>
-            <input type="text" id="nom" name="nom" class="form-control" required>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" id="nom" name="nom" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="prenom" class="form-label">Prénom</label>
+                <input type="text" id="prenom" name="prenom" class="form-control" required>
+            </div>
         </div>
-
-        <div class="mb-3">
-            <label for="prenom" class="form-label required">Prénom</label>
-            <input type="text" id="prenom" name="prenom" class="form-control" required>
+        <div class="row g-3 mt-3">
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="telephone" class="form-label">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone" class="form-control" pattern="[0-9]{9}" placeholder="Ex: 770050050" required>
+            </div>
         </div>
-
-        <div class="mb-3">
-            <label for="email" class="form-label required">Email</label>
-            <input type="email" id="email" name="email" class="form-control" required>
+        <div class="row g-3 mt-3">
+            <div class="col-md-6">
+                <label for="date" class="form-label">Date de réservation</label>
+                <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="heure" class="form-label">Heure</label>
+                <input type="time" id="heure" name="heure" class="form-control" required>
+            </div>
         </div>
-
-        <div class="mb-3">
-            <label for="telephone" class="form-label required">Numéro de téléphone</label>
-            <input type="tel" id="telephone" name="telephone" class="form-control" pattern="[0-9]{9}" placeholder="Ex: 770050050" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="date" class="form-label required">Date de réservation</label>
-            <input type="date" id="date" name="date" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="heure" class="form-label required">Heure</label>
-            <input type="time" id="heure" name="heure" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="personnes" class="form-label required">Nombre de personnes</label>
+        <div class="mt-3">
+            <label for="personnes" class="form-label">Nombre de personnes</label>
             <input type="number" id="personnes" name="personnes" class="form-control" min="1" max="20" required>
         </div>
-
-        <div class="mb-3">
-            <label for="commentaires" class="form-label">Commentaires</label>
-            <textarea id="commentaires" name="commentaires" class="form-control" rows="3" placeholder="Ajouter des détails ou des demandes particulières"></textarea>
-        </div>
-
-        <div class="text-center">
+        <div class="text-center mt-4">
             <button type="submit" class="btn btn-primary">Réserver</button>
-            <button type="reset" class="btn btn-secondary">Réinitialiser</button>
         </div>
     </form>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
