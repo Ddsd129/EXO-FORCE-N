@@ -60,62 +60,79 @@
         </div>
     </nav>
 
-    <section class="temoins-section mt-5" style="background-color: rgb(79, 101, 120);">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-           
-            <div class="carousel-item active">
-              <div class="card text-center mx-auto border border-secondary" style="width: 400px;">
-                <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
-                  <img src="image/Antoine.JPG" class="card-img-top" alt="Antoine" style="max-width: 100%; max-height: 100%;">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Antoine Garcia</h5>
-                  <p class="card-text">"Je suis tombé amoureux de ce restaurant unique en son genre!"</p>
-                </div>
-              </div>
-            </div>
-           
-            <div class="carousel-item">
-              <div class="card text-center mx-auto border border-secondary" style="width: 400px;">
-                <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
-                  <img src="image/Ousmane.JPG" class="card-img-top" alt="Ousmane" style="max-width: 100%; max-height: 100%;">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Ousmane Mballo</h5>
-                  <p class="card-text">"J’ai vraiment été séduis par sauce piquante, depuis la première réservation 
-                    je ne l’ai pas regretté".</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="carousel-item">
-              <div class="card text-center mx-auto border border-secondary" style="width: 400px;">
-                <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
-                  <img src="image/Adama.JPG" class="card-img-top" alt="Adama" style="max-width: 100%; max-height: 100%;">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Adama Ndiaye</h5>
-                  <p class="card-text">"L’originalité de leurs recettes a fait de ce restaurant mon préféré."</p>
-                </div>
-              </div>
-            </div>
+    <section class="temoins-section">
+      <h2 class="text-center text-black">Témoignages</h2>
+      <div class="temoins-container">
+          <div class="temoins-slide active">
+              <img src="image/Antoine.JPG" alt="Client 1" class="temoins-image">
+              <div class="temoins-name">Antoine Garcia</div>
+              <p class="temoins-text">"Je suis tombé amoureux de ce restaurant unique en son genre".</p>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </section>
-      
-      
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+          <div class="temoins-slide">
+              <img src="image/Ousmane.JPG" alt="Client 2" class="temoins-image">
+              <div class="temoins-name">Ousmane Mballo</div>
+              <p class="temoins-text">"J’ai vraiment été séduit par sauce piquante, depuis la première réservation 
+                  je ne l’ai pas regretté".</p>
+          </div>
+          <div class="temoins-slide">
+              <img src="image/Adama.JPG" alt="Client 3" class="temoins-image">
+              <div class="temoins-name">Adama Ndiaye</div>
+              <p class="temoins-text">"L’originalité de leurs recettes a fait de ce restaurant mon préféré."</p>
+          </div>
+      </div>
+      <div class="temoins-controls">
+          <button id="prev">←</button>
+          <button id="next">→</button>
+      </div>
+  </section>
+
+  <footer class="footer">
+      <div class="container-footer">
+          <div class="footer-section">
+              <h3>À propos</h3>
+              <p>Avec nous allez à la découverte d'une patrimoine culinaire typiquement sénégalaise.</p>
+          </div>
+  
+          <div class="footer-section">
+              <h3>Liens rapides</h3>
+              <ul>
+                  <li><a href="#accueil">Accueil</a></li>
+                  <li><a href="#menu">Menu</a></li>
+                  <li><a href="#galerie">Galerie</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h3>Contact</h3>
+              <ul>
+                  <li>📍 123 Rue Principale, Dakar, Sénégal</li>
+                  <li>📞 +221 77 123 4567</li>
+                  <li>✉️ lasaucepiquante@gmail.com</li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h3>Suivez-nous</h3>
+              <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><img src="image/Facebook, Negative.png" alt="Facebook"></a>
+                  <a href="#" aria-label="Twitter"><img src="image/X (Twitter), Negative.png" alt="Twitter"></a>
+                  <a href="#" aria-label="Instagram"><img src="image/Instagram, Negative.png" alt="Instagram"></a>
+                  <a href="#" aria-label="LinkedIn"><img src="image/LinkedIn, Negative.png" alt="LinkedIn"></a>
+              </div>
+          </div>
+      </div>
+  
+      <div class="footer-bottom">
+          <p>© 2025 SaucePiquante. Tous droits réservés.</p>
+      </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
