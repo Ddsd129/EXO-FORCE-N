@@ -46,6 +46,23 @@ body {
         background-color: #f9f9f9;
     }
 
+
+    .page-accueil {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .carousel-item img {
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
 .container{
     padding-top: 23px;
 
@@ -128,15 +145,7 @@ body {
     color: red;
 }
 
-.pic {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Thiebou.JPG);
-    background-size: cover;
-    background-position: center;    
-    height: 100vh;
-    width: 100vw;
-    border-top: 5px solid red;
-    border-bottom: 5px solid red;
-}
+
 
 h2{
     color: white;
@@ -186,7 +195,7 @@ h2{
 }
 
 .reservation-btn {
-    background-color: #ff5733;
+    background-color: #c44123;
     color: red;
     font-weight: bold;
     }
@@ -195,14 +204,15 @@ h2{
     color: blue;
 }
 
+h1 .text-center{
+    margin-top: 50px;
+}
 
 form {
-    max-width: 600px;
+    max-width: auto;
     margin: 0 auto;
     padding: 20px;
-    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -237,7 +247,9 @@ textarea {
     color: red;
 }
 
+
 button {
+    max-width: 100px;
     background-color: #007BFF;
     color: white;
     border: none;
@@ -259,7 +271,6 @@ button:hover {
 .temoins-section {
     padding: 50px 20px;
     background-color: #f9f9f9;
-    margin-top: 30px;
 }
 
 .temoins-container {
@@ -309,9 +320,9 @@ button:hover {
     border: none;
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    width: auto;
 }
 
 .temoins-controls button:hover {
@@ -330,3 +341,113 @@ button:hover {
         padding: 0 20px;
     }
 }
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 calc(25% - 20px); 
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: "Lobster", sans-serif;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff5733;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #343a40;
+    color: white;
+
+}
+
+.logo-footer {
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+    margin-right: 20px; /* Marge à droite pour espacement */
+}
+
+
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
