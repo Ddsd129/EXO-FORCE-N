@@ -59,29 +59,42 @@
         </div>
     </nav>
 
-    <section class="pic">
-        <div class=" container ">
-            <h2 class="mx-auto d-flex justify-content-center align-items-center fw-bold mb-3 mt-5">Bienvenue dans notre restaurant</h2>
-            <h1 class="titre fw-bold ">SAUCE_<span>PIQUANTE🍲🍜</span></h1>
-
-            <div class="reserve h-75 d-flex">
-                <div class="d-flex my-auto rest">
-                    <h4 class="me-5 mx-auto reservation">
-                        <a aria-current="page" class="btn reservation-btn bg-light btn-lg me-3" href="Réservation.html">
-                            Réservation
-                        </a>
-                    </h4>
-                    <div class="image">
-                        <img src="Thiebou.JPG" alt="" class="img-fluid mx-auto" height="250" width="250" style="border-radius: 50%;">
+    <section class="page-accueil">
+        <div id="carouselAccueil" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/djeun.JPG" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Bienvenue chez Sauce Piquante</h2>
+                        <p>Découvrez des saveurs uniques et originales.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/1 IM.jpeg" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Un voyage culinaire inoubliable</h2>
+                        <p>Partagez des moments exceptionnels autour d'une table.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/IMG_0286.JPG" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Réservez votre table dès maintenant</h2>
+                        <p>Et profitez d'une expérience unique.</p>
                     </div>
                 </div>
             </div>
-            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccueil" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAccueil" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
         </div>
+    </section>    
         
-    </section>
-        
-    <div class="container">     
         <div class="menu-section">
             <h3 class="text-center">Notre menu</h3>
             <h3 class="text-center">Spécialité 1</h3>
@@ -169,56 +182,49 @@
                 <button class="btn btn-primary btn-sm">Commander</button>  
         </div>
     </div>
-    </div>
 
-    <h1 class="text-center mb-4">Formulaire de Réservation</h1>
-    <form action="#" method="POST">
-        <div class="mb-3">
-            <label for="nom" class="form-label required">Nom</label>
-            <input type="text" id="nom" name="nom" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="prenom" class="form-label required">Prénom</label>
-            <input type="text" id="prenom" name="prenom" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="email" class="form-label required">Email</label>
-            <input type="email" id="email" name="email" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="telephone" class="form-label required">Numéro de téléphone</label>
-            <input type="tel" id="telephone" name="telephone" class="form-control" pattern="[0-9]{9}" placeholder="Ex: 770050050" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="date" class="form-label required">Date de réservation</label>
-            <input type="date" id="date" name="date" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="heure" class="form-label required">Heure</label>
-            <input type="time" id="heure" name="heure" class="form-control" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="personnes" class="form-label required">Nombre de personnes</label>
-            <input type="number" id="personnes" name="personnes" class="form-control" min="1" max="20" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="commentaires" class="form-label">Commentaires</label>
-            <textarea id="commentaires" name="commentaires" class="form-control" rows="3" placeholder="Ajouter des détails ou des demandes particulières"></textarea>
-        </div>
-
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary">Réserver</button>
-            <button type="reset" class="btn btn-secondary">Réinitialiser</button>
-        </div>
-    </form>
-
+    <section class="form-section py-5 bg-light">
+            <h1 class="text-center mb-4">Réservation</h1>
+            <form action="#" method="POST">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nom" class="form-label">Nom</label>
+                        <input type="text" id="nom" name="nom" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="prenom" class="form-label">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row g-3 mt-3">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telephone" class="form-label">Numéro de téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" class="form-control" pattern="[0-9]{9}" placeholder="Ex: 770050050" required>
+                    </div>
+                </div>
+                <div class="row g-3 mt-3">
+                    <div class="col-md-6">
+                        <label for="date" class="form-label">Date de réservation</label>
+                        <input type="date" id="date" name="date" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="heure" class="form-label">Heure</label>
+                        <input type="time" id="heure" name="heure" class="form-control" required>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label for="personnes" class="form-label">Nombre de personnes</label>
+                    <input type="number" id="personnes" name="personnes" class="form-control" min="1" max="20" required>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary">Réserver</button>
+                </div>
+            </form>
+    </section>
 
     <section class="temoins-section">
         <h2 class="text-center text-black">Témoignages</h2>
@@ -241,10 +247,59 @@
             </div>
         </div>
         <div class="temoins-controls">
-            <button id="prev">Précédent</button>
-            <button id="next">Suivant</button>
+            <button id="prev">←</button>
+            <button id="next">→</button>
         </div>
     </section>
+
+            <footer class="footer">
+                <div class="container-footer">
+                    <div class="footer-section logo-footer">
+                        <a href="#"><img src="sp.jpg" alt="Logo Sauce Piquante" style="border-radius: 50%; width: 70px; height: 70px;"></a>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h3>À propos</h3>
+                        <p>Un restaurant purement sénégalais offrant des recettes typiquement locales avec des saveurs uniques.</p>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h3>Liens utiles</h3>
+                        <ul>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#galerie">Galerie</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li> <a href="lieu:123 Rue Principale, Dakar, Sénégal">📍 123 Rue Principale, Dakar, Sénégal</a> </li>
+                            <li> <a href="tel:+221 77 123 4567">📞 +221 77 123 4567</a></li>
+                            <li> <a href="mailto:lasaucepiquante@gmail.com">✉️ lasaucepiquante@gmail.com</a> </li>
+                        </ul>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><img src="image/Facebook, Negative.png" alt="Facebook"></a>
+                            <a href="#" aria-label="Twitter"><img src="image/X (Twitter), Negative.png" alt="Twitter"></a>
+                            <a href="#" aria-label="Instagram"><img src="image/Instagram, Negative.png" alt="Instagram"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="image/LinkedIn, Negative.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="footer-bottom">
+                    <p>© 2025 SaucePiquante. Tous droits réservés.</p>
+                </div>
+            </footer>
+            
+    
+            
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
