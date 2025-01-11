@@ -59,32 +59,46 @@
         </div>
     </nav>
 
-    <section class="pic">
-        <div class=" container ">
-            <h2 class="mx-auto d-flex justify-content-center align-items-center fw-bold mb-3 mt-5">Bienvenue dans notre restaurant</h2>
-            <h1 class="titre fw-bold ">SAUCE_<span>PIQUANTE🍲🍜</span></h1>
-
-            <div class="reserve h-75 d-flex">
-                <div class="d-flex my-auto rest">
-                    <h4 class="me-5 mx-auto reservation">
-                        <a aria-current="page" class="btn reservation-btn bg-light btn-lg me-3" href="Réservation.html">
-                            Réservation
-                        </a>
-                    </h4>
-                    <div class="image">
-                        <img src="Thiebou.JPG" alt="" class="img-fluid mx-auto" height="250" width="250" style="border-radius: 50%;">
+    <section class="page-accueil">
+        <div id="carouselAccueil" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/djeun.JPG" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Bienvenue chez Sauce Piquante</h2>
+                        <p>Découvrez des saveurs uniques et originales.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/1 IM.jpeg" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Un voyage culinaire inoubliable</h2>
+                        <p>Partagez des moments exceptionnels autour d'une table.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/IMG_0286.JPG" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Réservez votre table dès maintenant</h2>
+                        <p>Et profitez d'une expérience unique.</p>
                     </div>
                 </div>
             </div>
-            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccueil" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAccueil" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
         </div>
-        
-    </section>
+    </section>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-</script>
-<script src="script.js"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

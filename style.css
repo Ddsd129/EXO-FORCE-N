@@ -46,6 +46,23 @@ body {
         background-color: #f9f9f9;
     }
 
+
+    .page-accueil {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .carousel-item img {
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
 .container{
     padding-top: 23px;
 
@@ -128,17 +145,7 @@ body {
     color: red;
 }
 
-.pic {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/1\ IM.jpeg);
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/2\ IM.jpeg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(image/3\ IM.jpeg);
-    background-size: cover;
-    background-position: center;    
-    height: 100vh;
-    width: 100vw;
-    border-top: 5px solid red;
-    border-bottom: 5px solid red;
-}
+
 
 h2{
     color: white;
@@ -337,11 +344,14 @@ button:hover {
 
 
 
-/* Footer */
 .footer {
     background-color: #333;
     color: white;
-    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .container-footer {
@@ -354,8 +364,9 @@ button:hover {
 }
 
 .footer-section {
-    flex: 1 1 calc(25% - 20px); /* Répartit les sections sur 4 colonnes */
+    flex: 1 1 calc(25% - 20px); 
     min-width: 200px;
+    margin: 10px;
 }
 
 .footer-section h3 {
@@ -405,16 +416,25 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* Footer Bottom */
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
     border-top: 1px solid #555;
     padding-top: 10px;
     font-size: 14px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #343a40;
+    color: white;
+
 }
 
-/* Responsive Design */
+.logo-footer {
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+    margin-right: 20px; /* Marge à droite pour espacement */
+}
+
+
 @media (max-width: 768px) {
     .container-footer {
         flex-direction: column;
@@ -429,3 +449,5 @@ button:hover {
         justify-content: center;
     }
 }
+
+

@@ -59,27 +59,41 @@
         </div>
     </nav>
 
-    <section class="pic">
-        <div class=" container ">
-            <h2 class="mx-auto d-flex justify-content-center align-items-center fw-bold mb-3 mt-5">Bienvenue dans notre restaurant</h2>
-            <h1 class="titre fw-bold ">SAUCE_<span>PIQUANTE🍲🍜</span></h1>
-
-            <div class="reserve h-75 d-flex">
-                <div class="d-flex my-auto rest">
-                    <h4 class="me-5 mx-auto reservation">
-                        <a aria-current="page" class="btn reservation-btn bg-light btn-lg me-3" href="Réservation.html">
-                            Réservation
-                        </a>
-                    </h4>
-                    <div class="image">
-                        <img src="Thiebou.JPG" alt="" class="img-fluid mx-auto" height="250" width="250" style="border-radius: 50%;">
+    <section class="page-accueil">
+        <div id="carouselAccueil" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/djeun.JPG" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Bienvenue chez Sauce Piquante</h2>
+                        <p>Découvrez des saveurs uniques et originales.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/1 IM.jpeg" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Un voyage culinaire inoubliable</h2>
+                        <p>Partagez des moments exceptionnels autour d'une table.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/IMG_0286.JPG" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Réservez votre table dès maintenant</h2>
+                        <p>Et profitez d'une expérience unique.</p>
                     </div>
                 </div>
             </div>
-            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccueil" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAccueil" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
         </div>
-        
-    </section>
+    </section>    
         
         <div class="menu-section">
             <h3 class="text-center">Notre menu</h3>
@@ -227,7 +241,7 @@
                     je ne l’ai pas regretté".</p>
             </div>
             <div class="temoins-slide">
-                <img src="image/AYLI1060.JPG" alt="Client 3" class="temoins-image">
+                <img src="image/Adama.JPG" alt="Client 3" class="temoins-image">
                 <div class="temoins-name">Adama Ndiaye</div>
                 <p class="temoins-text">"L’originalité de leurs recettes a fait de ce restaurant mon préféré."</p>
             </div>
@@ -238,48 +252,54 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="footer-section">
-                <h3>À propos</h3>
-                <p>Avec nous allez à la découverte d'une patrimoine culinaire typiquement sénégalaise.</p>
-            </div>
-    
-            <div class="footer-section">
-                <h3>Liens rapides</h3>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#galerie">Galerie</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <ul>
-                    <li>📍 123 Rue Principale, Dakar, Sénégal</li>
-                    <li>📞 +221 77 123 4567</li>
-                    <li>✉️ lasaucepiquante@gmail.com</li>
-                </ul>
-            </div>
-    
-            <div class="footer-section">
-                <h3>Suivez-nous</h3>
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><img src="image/Facebook, Negative.png" alt="Facebook"></a>
-                    <a href="#" aria-label="Twitter"><img src="image/X (Twitter), Negative.png" alt="Twitter"></a>
-                    <a href="#" aria-label="Instagram"><img src="image/Instagram, Negative.png" alt="Instagram"></a>
-                    <a href="#" aria-label="LinkedIn"><img src="image/LinkedIn, Negative.png" alt="LinkedIn"></a>
+            <footer class="footer">
+                <div class="container-footer">
+                    <div class="footer-section logo-footer">
+                        <a href="#"><img src="sp.jpg" alt="Logo Sauce Piquante" style="border-radius: 50%; width: 70px; height: 70px;"></a>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h3>À propos</h3>
+                        <p>Un restaurant purement sénégalais offrant des recettes typiquement locales avec des saveurs uniques.</p>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h3>Liens utiles</h3>
+                        <ul>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#galerie">Galerie</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li> <a href="lieu:123 Rue Principale, Dakar, Sénégal">📍 123 Rue Principale, Dakar, Sénégal</a> </li>
+                            <li> <a href="tel:+221 77 123 4567">📞 +221 77 123 4567</a></li>
+                            <li> <a href="mailto:lasaucepiquante@gmail.com">✉️ lasaucepiquante@gmail.com</a> </li>
+                        </ul>
+                    </div>
+            
+                    <div class="footer-section">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><img src="image/Facebook, Negative.png" alt="Facebook"></a>
+                            <a href="#" aria-label="Twitter"><img src="image/X (Twitter), Negative.png" alt="Twitter"></a>
+                            <a href="#" aria-label="Instagram"><img src="image/Instagram, Negative.png" alt="Instagram"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="image/LinkedIn, Negative.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            
+                <div class="footer-bottom">
+                    <p>© 2025 SaucePiquante. Tous droits réservés.</p>
+                </div>
+            </footer>
+            
     
-        <div class="footer-bottom">
-            <p>© 2025 SaucePiquante. Tous droits réservés.</p>
-        </div>
-    </footer>
-    
+            
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
