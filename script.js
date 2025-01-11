@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll('.temoins-slide');
+const slides = document.querySelectorAll('.testimonial-slide');
 let currentSlide = 0;
 
 const showSlide = (index) => {
