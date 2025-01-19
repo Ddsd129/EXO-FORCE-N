@@ -208,6 +208,7 @@ h1 .text-center{
     margin-top: 50px;
 }
 
+
 form {
     max-width: auto;
     margin: 0 auto;
@@ -271,6 +272,10 @@ button:hover {
 .temoins-section {
     padding: 50px 20px;
     background-color: #f9f9f9;
+}
+
+.temoins-section h2{
+    margin-top: 20px;
 }
 
 .temoins-container {
@@ -430,9 +435,9 @@ button:hover {
 }
 
 .logo-footer {
-    flex-shrink: 0; /* Empêche l'image de rétrécir */
-    margin-right: 20px; /* Marge à droite pour espacement */
-}
+    flex-shrink: 0; 
+    margin-right: 20px; 
+    }
 
 
 @media (max-width: 768px) {
