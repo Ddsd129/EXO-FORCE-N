@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template:`
+  <h1>{{title}}</h1>
+  <div>
+  <p>Bienvenue dans  notre restaurant</p>
+  </div>
+  `,
+  styleUrls:[]
 })
-export class AppComponent {
-  title = 'sauce-piquante';
+export class AppComponent{
+  title: string = 'Sauce Piquante';
 }

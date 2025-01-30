@@ -1,0 +1,121 @@
+
+h2{
+    color: white;
+}
+
+.titre{
+    color: blue;
+    margin-left: 50px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;      
+}
+
+.titre span{
+    color: red;
+}
+
+.container {
+    height: 100%;
+}
+.reserve{
+    margin: 0%;
+    justify-content:center;
+    padding: 0%;
+}
+.rest{
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.reservation{
+    margin-right: 30px;
+    padding: 0%;
+}
+.image{
+    margin-left: 30px;
+}
+
+.pic h4{
+    text-align: center;
+    
+}
+.pic h4 a{
+    margin: 20px;
+}
+
+.reservation-btn {
+    background-color: #c44123;
+    color: red;
+    font-weight: bold;
+    }
+.reservation-btn:hover {
+    background-color: #c44123;
+    color: blue;
+}
+
+h1 .text-center{
+    margin-top: 50px;
+}
+
+
+form {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+
+button {
+    max-width: 100px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    input, textarea, button {
+    font-size: 14px;
+    padding: 8px;
+    }
+}

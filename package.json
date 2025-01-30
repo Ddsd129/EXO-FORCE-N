@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Ddsd129/EXO-FORCE-N#readme",
   "description": "",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "express": "^4.21.2"
   }
 }

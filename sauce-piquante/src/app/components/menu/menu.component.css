@@ -1,0 +1,62 @@
+.container{
+    padding-top: 23px;
+
+}
+
+.menu-section {
+        margin: 50px 0;
+    }
+
+.menu-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        text-align: center;
+        width: 23%; 
+    }
+
+.menu-title {
+        font-weight: bold;
+        margin: 10px 0;
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+.menu-price {
+        color: #6c757d;
+        margin-bottom: 10px;
+    }
+
+.menu-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+.menu-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+
+.text-center{
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+.nav-item a{
+    list-style: none;
+    text-decoration: none;
+}
