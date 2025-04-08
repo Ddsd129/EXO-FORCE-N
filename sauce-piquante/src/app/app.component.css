@@ -1,0 +1,507 @@
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-item a{
+    list-style: none;
+    text-decoration: none;
+}
+
+#navbarTogglerDemo01 :hover{
+    color: red;
+}
+
+.container-fluid a{
+    color: blue;
+}
+
+.navbar-brand{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.navbar-brand span{
+    color: red;
+}
+
+
+
+.text-tertiaire{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+    }
+
+
+    .moon{
+        background-color: blue;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0,3s ease;
+    }
+    
+    .moon:hover {
+        background-color: red;
+    }
+    
+    .hero{
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    
+    .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    
+    }
+    
+    .hero .text{
+        flex: 1;
+        max-width: 600px;
+    }
+    
+    .hero .text h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: black;
+    }
+    
+    .hero .text p{
+        margin-bottom: 20px;
+        line-height: 1.6;
+        font-size: 16px;
+        color: #ccc;
+    }
+    
+    .hero .image{
+        flex:1;
+        text-align: right;
+    
+    }
+    
+    .hero .image img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 100px;
+    }
+    
+    
+    
+.container{
+    padding-top: 23px;
+
+}
+
+.menu-section {
+        margin: 50px 0;
+    }
+
+.menu-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        text-align: center;
+        width: 23%; 
+    }
+
+.menu-title {
+        font-weight: bold;
+        margin: 10px 0;
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+.menu-price {
+        color: #6c757d;
+        margin-bottom: 10px;
+    }
+
+.menu-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+.menu-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+
+.text-center{
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+.nav-item a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+#navbarTogglerDemo01 :hover{
+    color: red;
+}
+
+.container-fluid a{
+    color: blue;
+}
+
+.navbar-brand{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.navbar-brand span{
+    color: red;
+}
+
+
+
+h2{
+    color: white;
+}
+
+.titre{
+    color: blue;
+    margin-left: 50px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;      
+}
+
+.titre span{
+    color: red;
+}
+
+.container {
+    height: 100%;
+}
+.reserve{
+    margin: 0%;
+    justify-content:center;
+    padding: 0%;
+}
+.rest{
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.reservation{
+    margin-right: 30px;
+    padding: 0%;
+}
+.image{
+    margin-left: 30px;
+}
+
+.pic h4{
+    text-align: center;
+    
+}
+.pic h4 a{
+    margin: 20px;
+}
+
+.reservation-btn {
+    background-color: #c44123;
+    color: red;
+    font-weight: bold;
+    }
+.reservation-btn:hover {
+    background-color: #c44123;
+    color: blue;
+}
+
+h1 .text-center{
+    margin-top: 50px;
+}
+
+
+form {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+
+button {
+    max-width: 100px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    input, textarea, button {
+    font-size: 14px;
+    padding: 8px;
+    }
+}
+
+
+.temoins-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.temoins-section h2{
+    margin-top: 20px;
+}
+
+.temoins-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.temoins-slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temoins-slide.active {
+    display: flex;
+}
+
+.temoins-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.temoins-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.temoins-text {
+    font-style: italic;
+    color: #555;
+}
+
+.temoins-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.temoins-controls button {
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}
+
+.temoins-controls button:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+    .temoins-container {
+        flex-direction: row;
+        gap: 20px;
+        max-width: 1200px;
+    }
+
+    .temoins-slide {
+        flex: 1;
+        padding: 0 20px;
+    }
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 calc(25% - 20px); 
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: "Lobster", sans-serif;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff5733;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #343a40;
+    color: white;
+
+}
+
+.logo-footer {
+    flex-shrink: 0; 
+    margin-right: 20px; 
+    }
+
+
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+

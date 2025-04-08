@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
     <div>
-    <nav class="navbar navbar-expand-lg  bg-ligth " >
+    <nav class="navbar navbar-expand-lg  bg-ligth " id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand fw-bold " href="#">
                 <img src="sp.jpg" alt="Logo Sauce Piquante"style="border-radius: 50%"
@@ -46,6 +46,11 @@
                     </li>
                     <li class="nav-item mx-3 fw-bold">
                         <a aria-current="page"
+                            href="#reservation" >Réservation</a>
+
+                    </li>
+                    <li class="nav-item mx-3 fw-bold">
+                        <a aria-current="page"
                             href="#témoignages" >Témoignages</a>
 
                     </li>
@@ -59,45 +64,28 @@
         </div>
     </nav>
 
-    <section class="page-accueil">
-        <div id="carouselAccueil" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="image/3 IM.jpeg" class="d-block w-100" alt="Image 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>Bienvenue chez Sauce Piquante</h2>
-                        <p> Découvrez des saveurs uniques et originales.  </p>
-                        <a href="#Réservation" class="btn btn-primary btn-sm">Réservation</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="image/1 IM.jpeg" class="d-block w-100" alt="Image 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>Un voyage culinaire inoubliable</h2>
-                        <p>Partagez des moments exceptionnels autour d'une table.</p>
-                        <a href="#Réservation" class="btn btn-primary btn-sm">Réservation</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="image/2 IM.jpeg" class="d-block w-100" alt="Image 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>Réservez votre table dès maintenant</h2>
-                        <p>Et profitez d'une expérience unique.</p>
-                        <a href="#Réservation" class="btn btn-primary btn-sm">Réservation</a>
-                    </div>
-                </div>
+</div>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="text">
+                <h1>Bienvenue chez <br/> Sauce Piquante</h1>
+                <p>
+                    Partagez des moments exceptionnels autour d'une table. Et profitez d'une expérience unique. Découvrez des saveurs uniques et originales.
+                </p>
+                <a href="#" class="moon">RESERVER</a>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccueil" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Précédent</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselAccueil" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Suivant</span>
-            </button>
-        </div>
-    </section>    
-        
+            <div class="image">
+                <img src="image/CUI.PNG" style="border-radius: 50%"
+                width="500px"
+                height="500px" alt="delicieux">
+
+            </div>
+    </section>
+
+
+
         <div class="menu-section">
             <h3 class="text-center">Notre menu</h3>
             <h3 class="text-center">Spécialité 1</h3>
@@ -132,26 +120,26 @@
             <h3 class="text-center">Spécialité 2</h3>
             <div class="menu-row">
         <div class="menu-card">
-            <img src="image/Kandja.WEBP" alt="Kandja" class="menu-image">
-            <div class="menu-title">Soupe kandji</div>
+            <img src="image/Crabe farcis.jpg" alt="Kandja" class="menu-image">
+            <div class="menu-title">Crabe farcis</div>
             <div class="menu-price">1500 fcfa</div>
             <button class="btn btn-primary btn-sm">Commander</button>
         </div>
         <div class="menu-card">
-            <img src="image/Kaldou.JPG" alt="Kaldou" class="menu-image">
-            <div class="menu-title">Kaldou</div>
+            <img src="image/Moules aux poivrons.jpg" alt="Kaldou" class="menu-image">
+            <div class="menu-title">Moules aux poivrons</div>
             <div class="menu-price">1000 fcfa</div>
             <button class="btn btn-primary btn-sm">Commander</button>
         </div>
         <div class="menu-card">
-            <img src="image/Domoda.JPG" alt="Domoda" class="menu-image">
-            <div class="menu-title">Domoda</div>
+            <img src="image/Palettes aux lentilles.jpg" alt="Domoda" class="menu-image">
+            <div class="menu-title">Palettes aux lentilles</div>
             <div class="menu-price">800 fcfa</div>
             <button class="btn btn-primary btn-sm">Commander</button>
         </div>
         <div class="menu-card">
-            <img src="image/djeun.JPG" alt="djeun" class="menu-image">
-            <div class="menu-title">Thiébou djeun</div>
+            <img src="image/Spaguetti aux moules.jpg" alt="djeun" class="menu-image">
+            <div class="menu-title">Spaguetti aux moules</div>
             <div class="menu-price">1000 fcfa</div>
             <button class="btn btn-primary btn-sm">Commander</button>
     </div>
@@ -185,6 +173,48 @@
                 <button class="btn btn-primary btn-sm">Commander</button>  
         </div>
     </div>
+
+
+
+
+    <section class="galerie-section py-5">
+        <h3 class="text-center mb-4">Galerie</h3>
+        <div class="container">
+            <div id="carouselGalerie" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/pl.png" class="d-block w-100 rounded animate__animated animate__fadeIn" alt="Ice Cream">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/BGER.PNG" class="d-block w-100 rounded animate__animated animate__fadeIn" alt="Chocolat">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/DVANT.PNG" class="d-block w-100 rounded animate__animated animate__fadeIn" alt="Burger">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/DV.PNG" class="d-block w-100 rounded animate__animated animate__fadeIn" alt="Spaghetti">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/CUISSE.PNG" class="d-block w-100 rounded animate__animated animate__fadeIn" alt="Omelette au Jambon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/CUI.PNG" class="d-block w-100 rounded animate__animated animate__fadeIn" alt="Crabe farcis">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalerie" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselGalerie" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    
+
 
     <section class="form-section py-5 bg-light">
             <h1 class="text-center mb-4">Réservation</h1>
@@ -279,7 +309,8 @@
                     <div class="footer-section">
                         <h3>Contact</h3>
                         <ul>
-                            <li> <a href="lieu:123 Rue Principale, Dakar, Sénégal">📍 123 Rue Principale, Dakar, Sénégal</a> </li>
+                            <li> <a href="https://www.google.com/maps">📍 Dixième, Thiès, Sénégal</a> </li>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15430.451922882283!2d-16.947140828698487!3d14.79081621834204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1bfbf94db1b3f%3A0xf9e6364a8f8032e5!2zZGl4acOpbWUsIFRoacOocw!5e0!3m2!1sfr!2ssn!4v1744082224868!5m2!1sfr!2ssn" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                            
                             <li> <a href="tel:+221 77 123 4567">📞 +221 77 123 4567</a></li>
                             <li> <a href="mailto:lasaucepiquante@gmail.com">✉️ lasaucepiquante@gmail.com</a> </li>
                         </ul>
@@ -288,10 +319,10 @@
                     <div class="footer-section">
                         <h3>Suivez-nous</h3>
                         <div class="social-icons">
-                            <a href="#" aria-label="Facebook"><img src="image/Facebook, Negative.png" alt="Facebook"></a>
-                            <a href="#" aria-label="Twitter"><img src="image/X (Twitter), Negative.png" alt="Twitter"></a>
-                            <a href="#" aria-label="Instagram"><img src="image/Instagram, Negative.png" alt="Instagram"></a>
-                            <a href="#" aria-label="LinkedIn"><img src="image/LinkedIn, Negative.png" alt="LinkedIn"></a>
+                            <a href="https://www.facebook.com" aria-label="Facebook"><img src="image/Facebook, Negative.png" alt="Facebook"></a>
+                            <a href="https://x.com" aria-label="X"><img src="image/X (Twitter), Negative.png" alt="Twitter"></a>
+                            <a href="https://www.instagram.com" aria-label="Instagram"><img src="image/Instagram, Negative.png" alt="Instagram"></a>
+                            <a href="https://www.linkedin.com" aria-label="LinkedIn"><img src="image/LinkedIn, Negative.png" alt="LinkedIn"></a>
                         </div>
                     </div>
                 </div>
@@ -311,3 +342,5 @@
 </body>
 
 </html>
+
+

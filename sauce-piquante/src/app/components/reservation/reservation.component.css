@@ -1,71 +1,11 @@
-
-h2{
-    color: white;
-}
-
-.titre{
-    color: blue;
-    margin-left: 50px;
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;      
-}
-
-.titre span{
-    color: red;
-}
-
 .container {
     height: 100%;
+    padding-top: 23px;
 }
-.reserve{
-    margin: 0%;
-    justify-content:center;
-    padding: 0%;
-}
-.rest{
-    margin: 0%;
-    padding: 0%;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-}
-.reservation{
+
+.reservation {
     margin-right: 30px;
     padding: 0%;
-}
-.image{
-    margin-left: 30px;
-}
-
-.pic h4{
-    text-align: center;
-    
-}
-.pic h4 a{
-    margin: 20px;
-}
-
-.reservation-btn {
-    background-color: #c44123;
-    color: red;
-    font-weight: bold;
-    }
-.reservation-btn:hover {
-    background-color: #c44123;
-    color: blue;
-}
-
-h1 .text-center{
-    margin-top: 50px;
-}
-
-
-form {
-    max-width: auto;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 .form-group {
@@ -91,16 +31,6 @@ input:focus, textarea:focus {
     outline: none;
 }
 
-textarea {
-    resize: vertical;
-}
-
-.required::after {
-    content: " *";
-    color: red;
-}
-
-
 button {
     max-width: 100px;
     background-color: #007BFF;
@@ -113,9 +43,46 @@ button:hover {
     background-color: #0056b3;
 }
 
-@media (max-width: 600px) {
-    input, textarea, button {
-    font-size: 14px;
-    padding: 8px;
-    }
+.required::after {
+    content: " *";
+    color: red;
 }
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-item a {
+    list-style: none;
+    text-decoration: none;
+}
+
+#navbarTogglerDemo01:hover {
+    color: red;
+}
+
+.container-fluid a {
+    color: blue;
+}
+
+.navbar-brand {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.navbar-brand span {
+    color: red;
+}
+
+
+
+

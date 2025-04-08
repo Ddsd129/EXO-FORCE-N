@@ -1,44 +1,43 @@
-.temoins-section {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
+.text-center {
+    margin-top: 90px;
 }
 
-.temoins-section h2{
-    margin-top: 20px;
-}
-
-.temoins-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-}
 
 .temoins-slide {
     display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-.temoins-slide.active {
-    display: flex;
-}
-
-.temoins-image {
+    text-align: center;
+  }
+  
+  .temoins-slide.active {
+    display: block;
+  }
+  
+  .temoins-image {
     width: 100px;
     height: 100px;
+    object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.temoins-name {
-    font-weight: bold;
     margin-bottom: 10px;
-}
+  }
+  
+  .temoins-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .temoins-text {
+    font-style: italic;
+    color: #333;
+  }
+  
+  .temoins-controls button {
+    margin: 10px;
+    font-size: 1.2rem;
+  }
+  
 
-.temoins-text {
+
+  .temoins-text {
     font-style: italic;
     color: #555;
 }
@@ -61,17 +60,4 @@
 
 .temoins-controls button:hover {
     background-color: #0056b3;
-}
-
-@media (min-width: 768px) {
-    .temoins-container {
-        flex-direction: row;
-        gap: 20px;
-        max-width: 1200px;
-    }
-
-    .temoins-slide {
-        flex: 1;
-        padding: 0 20px;
-    }
 }

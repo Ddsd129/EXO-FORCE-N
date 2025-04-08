@@ -1,0 +1,114 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-item a{
+    list-style: none;
+    text-decoration: none;
+}
+
+#navbarTogglerDemo01 :hover{
+    color: red;
+}
+
+.container-fluid a{
+    color: blue;
+}
+
+.navbar-brand{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.navbar-brand span{
+    color: red;
+}
+
+
+
+.text-tertiaire{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+    }
+
+
+    .moon{
+        background-color: blue;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0,3s ease;
+    }
+    
+    .moon:hover {
+        background-color: red;
+    }
+    
+    .hero{
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    
+    .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    
+    }
+    
+    .hero .text{
+        flex: 1;
+        max-width: 600px;
+    }
+    
+    .hero .text h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: black;
+    }
+    
+    .hero .text p{
+        margin-bottom: 20px;
+        line-height: 1.6;
+        font-size: 16px;
+        color: #ccc;
+    }
+    
+    .hero .image{
+        flex:1;
+        text-align: right;
+    
+    }
+    
+    .hero .image img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 100px;
+    }
+    
+   
+    
+    

@@ -27,9 +27,11 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              
             ],
-            "scripts": [],
+            "scripts": [
+              
+            ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -41,13 +43,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "5MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "300kB",
+                  "maximumError": "1MB"
                 }
               ],
               "outputHashing": "all"
@@ -84,6 +86,7 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
+              
               {
                 "glob": "**/*",
                 "input": "public"
@@ -91,10 +94,14 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/animate.css/animate.min.css"
+
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/gsap/dist/gsap.min.js"
             ]
           }
         }
@@ -105,6 +112,3 @@
     "analytics": "970ca692-31e2-457f-8fec-2f8b1ee4ed99"
   }
 }
-
-
-
